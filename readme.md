@@ -1,5 +1,5 @@
 # This script is unfinished!
-It will not work without manual interference. The django secret key often generates with special characters and thus sed fails to import it ~Sometimes~.
+It will not work without manual interference. The django secret key often generates with special characters and thus sed fails to import it /sometimes/.
 Selecting http as the network protocol, is not able to comment out reverse proxy tls and will generate nginx errors
 
 I am not very literate with these issues at this time and the manual jigging has been easier than learning how to fix, so feel free to fork or pull request if u want :)
