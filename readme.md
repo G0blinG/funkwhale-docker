@@ -5,12 +5,13 @@ Selecting http as the network protocol, is not able to comment out reverse proxy
 I am not very literate with these issues at this time and the manual jigging has been easier than learning how to fix, so feel free to fork or pull request if u want :)
 
 ## Todo
-[] Fix django secret key setting
-[] Fix http reverse proxy config
-[] Ask for custom media paths for in place imports // add optional web bucket support
-[] Ask for federation
-[] Implement checks for custom config files
-[] Implement script memory (checking where left off in case of bad input??)
+ - [] Fix django secret key setting
+ - [] Fix http reverse proxy config
+ - [] Ask for custom media paths for in place imports // add optional web bucket support
+ - [] Ask for federation
+ - [] Implement checks for custom config files
+ - [] Implement script memory (checking where left off in case of bad input??)
+ - [] Optional system config stage to make sure container restarts and tunnels autostart on boot/crash
 
 # Goblin Funkwhale Install Script
 A script setup from the official docker install route of funkwhale, with fixes where commands were broken and added ease of use things like housing nginx config files within the home directory. Also automatic http configuring if planning to use cloudflare tunnels or the like !
