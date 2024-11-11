@@ -7,11 +7,12 @@ I am not very literate with these issues at this time and the manual jigging has
 ## Todo
  - [] Fix django secret key setting
  - [] Fix http reverse proxy config
- - [] Ask for custom media paths for in place imports // add optional web bucket support
+ - [] Ask for custom media paths // add optional web bucket support
  - [] Ask for federation
  - [] Implement checks for custom config files
  - [] Implement script memory (checking where left off in case of bad input??)
  - [] Optional system config stage to make sure container restarts and tunnels autostart on boot/crash
+ - [] Optional cron job to report VM partition storage capacity via email??? % based alerts and/or weekly updates?
 
 # Goblin Funkwhale Install Script
 A script setup from the official docker install route of funkwhale, with fixes where commands were broken and added ease of use things like housing nginx config files within the home directory. Also automatic http configuring if planning to use cloudflare tunnels or the like !
@@ -27,3 +28,7 @@ The important ones are, from within the funkwhale directory;
 
 # HTTPS
 Please make sure you have the correct hostname and DNS setup prior to running the script, else nginx and certbot will fail.
+
+# Why use this over the instructions/easy install script on Funkwhales site?
+I was having difficulty setting up funkwhale on a vm so I made this script so I could declaratively troubleshoot the steps I was taking. If it's not useful to you, feel free to make your own!
+I also found some issues in their instructions later on that haven't been updated (last time I checked), I think mis-referencing a env file.
